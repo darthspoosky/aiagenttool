@@ -138,7 +138,59 @@ A production-grade web application for managing projects, boards, tasks, and use
 
 ---
 
-## 7. References & Further Reading
+## 7. Component Inventory & Roadmap
+
+### 7.1. Atomic Components
+- **Button** (primary, secondary, icon, disabled)
+- **Input** (text, password, email, textarea, with validation and error states)
+- **Select** (dropdown, single/multi-select, searchable)
+- **Checkbox** (standalone, in lists)
+- **Radio** (grouped options)
+- **Switch/Toggle**
+- **Avatar** (user image, fallback initials)
+- **Spinner** (loading indicator, inline and full-page)
+- **Badge** (status, notification)
+- **Tooltip** (help, info)
+- **Icon** (SVG-based, accessible)
+- **Alert** (info, success, warning, error)
+
+### 7.2. Composite Components
+- **Modal/Dialog** (focus trap, a11y, for forms/details)
+- **Card** (board/task display, with header/footer)
+- **Dropdown Menu** (actions, user menu)
+- **Snackbar/Toast** (transient notifications)
+- **Tabs** (navigation, settings)
+- **Pagination** (for lists)
+- **Breadcrumbs** (navigation)
+- **List** (generic, virtualized for performance)
+- **Accordion/Collapse** (expandable sections)
+- **Progress Bar** (task/board completion)
+- **Stepper** (multi-step forms)
+
+### 7.3. Kanban-Specific Components
+- **Board Container** (holds columns, drag-and-drop enabled)
+- **Column** (with title, add/edit/delete, drag-and-drop)
+- **Task Card** (draggable, editable, shows status/assignee/labels)
+- **Task Details Modal** (comments, attachments, assignees, due date)
+- **Comment List** (with avatars, timestamps)
+- **Activity Feed** (board/task actions)
+- **User Invite Dialog** (email input, role select)
+
+### 7.4. Utility/Infrastructure Components
+- **Form** (validation, error summary)
+- **Protected Route** (auth check)
+- **Error Boundary**
+- **Loading Skeleton** (for async content)
+- **Theme Provider** (design token context)
+
+#### Notes:
+- All components must use CSS Modules, design tokens, and pass a11y checks (keyboard, ARIA, color contrast).
+- Each component should include Storybook stories and RTL tests.
+- Update this list as new requirements emerge or components are refactored.
+
+---
+
+## 8. References & Further Reading
 - [Firebase Docs](https://firebase.google.com/docs)
 - [React DnD](https://react-dnd.github.io/react-dnd/about)
 - [Jira UI Inspiration](https://www.atlassian.com/software/jira)

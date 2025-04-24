@@ -74,6 +74,32 @@ All key decisions should be summarized in the "Resolved Discussions" section.
 
 > This section tracks progress, responsibilities, and knowledge sharing. Update regularly to maximize transparency and teamwork.
 
+---
+
+## Component Inventory & Agent Instructions (2025-04-24 23:50:51)
+
+**Component Inventory:**
+- **Atomic:** Button, Input (text, password, email, textarea), Select, Checkbox, Radio, Switch/Toggle, Avatar, Spinner, Badge, Tooltip, Icon, Alert
+- **Composite:** Modal/Dialog, Card, Dropdown Menu, Snackbar/Toast, Tabs, Pagination, Breadcrumbs, List, Accordion/Collapse, Progress Bar, Stepper
+- **Kanban-Specific:** Board Container, Column, Task Card, Task Details Modal, Comment List, Activity Feed, User Invite Dialog
+- **Utility/Infrastructure:** Form, Protected Route, Error Boundary, Loading Skeleton, Theme Provider
+
+**Instructions:**
+- **Frontend Agent:**
+  - Prioritize scaffolding the above atomic and composite components using CSS Modules, design tokens, and a11y best practices.
+  - Each component must have Storybook stories and RTL tests.
+  - Document blockers or suggestions for new components in pm-frontend-chat.md for PM review.
+- **Backend Agent:**
+  - Ensure backend APIs and Firestore models support the data needs of these components (e.g., task details, comments, user avatars, activity feed).
+  - Proactively communicate any API changes or new requirements that affect component integration.
+
+**Both Agents:**
+- Collaborate closely on component–API contracts, especially for Kanban board, tasks, comments, and activity.
+- Surface blockers and cross-team dependencies in agentschat.md for rapid resolution.
+- Update this inventory as the project evolves.
+
+---
+
 | Task | Owner(s) | Status | Priority | Target Date | Dependencies / Notes |
 |------|----------|--------|----------|-------------|----------------------|
 | Project setup (Firebase, repo, protocols) | Backend, Frontend, PM | ✅ Done | High | 2025-04-20 | All agents onboarded |
