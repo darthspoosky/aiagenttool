@@ -30,3 +30,6 @@ Today I started thinking about the best way to structure the Firestore database.
 
 [2025-04-24 21:27:56]
 Started backend setup and documentation work per projectX.md, BACKEND_INSTRUCTIONS.md, and README.md. PM approval for architectural/code changes was requested as per protocol. Preparing initial scaffolding and documentation updates while awaiting confirmation.
+
+[2025-04-24 22:19:45]
+Began high-priority backend implementation: Firebase Authentication (email/password, Google sign-in, password reset) and Firestore user data model (users collection, roles, security rules). Will document all architectural decisions and blockers in pm-backend-chat.md and diary-backend.md, and push changes regularly as instructed.

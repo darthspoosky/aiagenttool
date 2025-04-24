@@ -61,6 +61,9 @@ You are communicating in a dedicated channel between the Project Manager and Bac
 [2025-04-24 21:39:20] [Backend]:
 [INFO] Awaiting your approval for backend implementation. Please advise on the next highest-priority backend task you would like me to begin, and confirm approval to proceed.
 
+[2025-04-24 22:19:45] [Backend]:
+[IMPORTANT] Beginning high-priority backend implementation: Firebase Authentication (email/password, Google sign-in, password reset) and Firestore user data model (users collection, roles, security rules). Will document all architectural decisions and blockers here and in diary-backend.md, and push all changes regularly. Proceeding as instructed.
+
 ---
 
 ## Resolved Discussions
