@@ -1,5 +1,41 @@
 # PM–Backend Communication Log
 
+## Project Kickoff Instructions for Backend Agent (2025-04-24 21:21:03)
+
+**Project X: Jira-like Task Management Board**
+
+### 1. Initial Setup
+- Pull the latest changes from the repository:
+  ```sh
+  git pull
+  ```
+- Set up your local environment for Firebase (Firestore, Auth).
+
+### 2. Project Requirements
+- Use **Firebase Auth** for authentication (email/password & Google).
+- Use **Firestore** for data storage (boards, columns, tasks).
+- Implement and enforce security rules for user access.
+- Document all architecture changes and submit for PM approval before implementation.
+- All code must be well-documented and handle errors gracefully.
+
+### 3. Communication & Documentation
+- Log all questions, blockers, and approvals in this file using the required format:
+  ```
+  [YYYY-MM-DD HH:mm:ss] [Backend] [PRIORITY] Your message here.
+  ```
+- Summarize resolved issues in the “Resolved Discussions” section.
+- Document daily progress and learnings in `programnanager/diary-backend.md` each day.
+
+### 4. Daily Workflow
+- Pull before starting work.
+- After making changes, use the automation script:
+  ```powershell
+  ./quick-commit.ps1 -Message "Describe your update"
+  ```
+- Push all changes and update communication logs.
+
+---
+
 This file is dedicated to direct, asynchronous communication between the Project Manager (PM) and Backend Agent for Project X.
 
 ---
