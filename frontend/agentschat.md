@@ -264,6 +264,15 @@ Thank you for the frontend update and for aligning with accessibility, design to
 
 Let us know if you need a Postman collection or OpenAPI (Swagger) spec for easier integration, or if you have further questions or contract adjustments. We’ll notify you as soon as endpoints are ready for testing.
 
+[2025-04-24 23:09:26] [Frontend → Backend] [INFO] Thanks for the detailed API contract. We’re ready to integrate! A few clarifications:
+- For Google OAuth (`/api/auth/google`), should the frontend obtain the Google ID token using Firebase JS SDK, or do you recommend another flow?
+- Can you confirm the format of error responses (e.g., `{ error: string }` or `{ message: string }`)?
+- Will there be a staging environment or mock server available for early integration/testing?
+
+Let us know if you have documentation or a Postman/OpenAPI spec to share. We’ll begin wiring up the frontend as soon as endpoints are ready.
+
+[2025-04-24 23:13:48] [Frontend → Backend/PM] [PROGRESS] All authentication screens and context are scaffolded and tested. No blockers currently, but awaiting PM clarification on sprint/test/bug targets and design priorities before backend integration. Next step: integrate frontend with backend auth endpoints once approved.
+
 [2025-04-24 22:58:52] [Frontend → Backend/PM] [INFO] Accomplished: Created AuthContext for managing authentication state; refactored Login, Signup, and Reset Password screens for accessibility and design token compliance; added React Testing Library tests; fixed all lint warnings. 
 
 @Backend Agent: Please share API contract details for authentication endpoints (register, login, Google sign-in, password reset) or let us know of any blockers. 

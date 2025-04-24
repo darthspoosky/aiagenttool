@@ -74,6 +74,41 @@ All key decisions should be summarized in the "Resolved Discussions" section.
 
 > This section tracks progress, responsibilities, and knowledge sharing. Update regularly to maximize transparency and teamwork.
 
+| Task | Owner(s) | Status | Priority | Target Date | Dependencies / Notes |
+|------|----------|--------|----------|-------------|----------------------|
+| Project setup (Firebase, repo, protocols) | Backend, Frontend, PM | ✅ Done | High | 2025-04-20 | All agents onboarded |
+| Storybook & UI scaffolding | Frontend | ✅ Done | High | 2025-04-22 | |
+| Button component (with tests) | Frontend | ✅ Done | High | 2025-04-22 | CSS Modules, RTL |
+| AuthContext & screens (Login, Signup, Reset) | Frontend | ✅ Done | High | 2025-04-24 | Design tokens, a11y |
+| Firebase Auth (email/pass, Google, reset) | Backend | 🟡 In progress | High | 2025-04-26 | |
+| Firestore user model (users, roles, rules) | Backend | 🟡 In progress | High | 2025-04-26 | |
+| Auth API contract (register, login, Google, reset) | Backend | ☐ Not started | High | 2025-04-25 | Required for frontend integration |
+| Auth integration (frontend/backend) | Frontend, Backend | ☐ Not started | High | 2025-04-27 | Blocked until API contract shared |
+| Test coverage (auth flows) | Both | ☐ Not started | High | 2025-04-28 | |
+| Documentation & blockers logging | Both | 🟡 Ongoing | High | Continuous | Use pm-backend-chat.md, diary files |
+
+**Status Legend:**
+- ☐ Not started
+- 🟡 In progress
+- ⚠️ Blocked (add blocker details in learnings)
+- ✅ Done
+
+---
+
+[2025-04-24 23:13:19] [Project Management] [INFO]
+**Project Plan Update:**
+- All setup, Storybook, and UI scaffolding tasks are complete.
+- Backend Auth and user model are in progress, on track for 2025-04-26.
+- **Critical dependency:** Backend must provide API contract details for authentication endpoints by 2025-04-25 to unblock frontend integration.
+- Auth integration, test coverage, and documentation will proceed immediately after API contract delivery.
+- All agents: Continue logging blockers, decisions, and daily progress. Notify PM immediately if timelines or dependencies change.
+
+**Next Milestone:**
+- API contract shared and reviewed (2025-04-25)
+- Integrated auth flows tested (2025-04-28)
+
+If priorities shift or blockers arise, PM will update this plan and communicate changes promptly.
+
 | Task | Agent Responsible | Status | Priority | Deadline | Latest Learnings |
 |------|-------------------|--------|----------|----------|------------------|
 | Project setup (Firebase, repo) | Backend, Frontend, Project Management | ☐ Not started | High | 2025-05-01 | |
@@ -257,3 +292,6 @@ All collaboration and documentation files are ready and committed to the shared 
 Thank you to both frontend and backend agents for your detailed progress updates and for adhering to communication protocols. The project is on track with Storybook, component, and authentication scaffolding completed. To maintain momentum and ensure seamless integration, the next step is for the backend agent to provide API contract details for authentication endpoints (register, login, Google sign-in, password reset). Frontend agent, please continue to align UI and state management with accessibility and design tokens. All agents: continue to log blockers, decisions, and progress. PM will update the project plan once API details and any new blockers are surfaced.
 
 @PM: Next, we plan to integrate the authentication screens with backend endpoints and AuthContext, handling all API responses and errors. Please review and approve this plan or advise on any changes or priorities.
+
+[2025-04-24 23:11:26] [Project Management] [APPROVED]
+The integration plan for authentication screens with backend endpoints and AuthContext is reviewed and approved. Please proceed, ensuring all API responses and errors are handled gracefully and documented. Maintain accessibility and design token compliance, and continue to log blockers and learnings in the appropriate channels. Notify PM immediately if you encounter any integration issues or require further clarification. Thank you for your diligence and collaboration.
