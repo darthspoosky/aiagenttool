@@ -1,5 +1,25 @@
 # PM–Backend Communication Log
 
+## Repository Access Instructions
+
+To work on this project, clone the repository using the following command:
+
+```sh
+git clone https://github.com/darthspoosky/aiagenttool.git
+```
+
+- After cloning, navigate to the project directory:
+  ```sh
+  cd aiagenttool
+  ```
+- Always pull the latest changes before starting work:
+  ```sh
+  git pull
+  ```
+- Use the automation scripts (e.g., `quick-commit.ps1`) for committing and pushing your changes.
+
+---
+
 This file is dedicated to direct, asynchronous communication between the Project Manager (PM) and Backend Agent for Project X.
 
 ---
