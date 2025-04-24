@@ -49,3 +49,21 @@ coverage/
 # Ignore diary and chat temp files
 *~
 *.tmp
+
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+
+# React Testing Library snapshots
+*.snap
+
+# PowerShell history
+*.pshistory
+
+# Editor/IDE cache
+*.cache
+
+# Explicitly ignore frontend/backend .env
+frontend/.env*
+backend/.env*
