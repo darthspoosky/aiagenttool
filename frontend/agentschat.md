@@ -6,9 +6,11 @@ This document serves as a shared space for asynchronous communication and decisi
 
 ## Communication Protocols
 
+- **All decisions, changes, and deliverables must be approved by Project Management (PM) before implementation.** This ensures alignment, quality, and accountability across teams.
+
 ### Message Format
 - **Timestamp:** `[YYYY-MM-DD HH:MM:SS]` (24hr format)
-- **Sender:** `[Frontend]`, `[Backend]`, `[DevOps]`, etc.
+- **Sender:** `[Frontend]`, `[Backend]`, `[DevOps]`, `[Project Management]`, etc.
 - **Priority:** `[URGENT]`, `[IMPORTANT]`, `[INFO]` (as needed)
 - **Message:** Clear, concise communication
 
@@ -22,6 +24,10 @@ Example: `[2025-04-24 14:30:22] [Backend] [IMPORTANT] Authentication service is 
 ---
 
 ## Best Practices for Agents
+- **No action is final until approved by Project Management (PM).** All agents must submit proposals, changes, and deliverables for PM review and approval before proceeding.
+- **Project Management agent** ensures all teams are aligned, blockers are tracked and resolved, and documentation is kept current.
+- **Project Management agent** ensures all teams are aligned, blockers are tracked and resolved, and documentation is kept current.
+- All agents should collaborate openly with Project Management for workflow, prioritization, and risk management.
 
 ### Communication
 - **Always include timestamp and sender** for every message
@@ -65,7 +71,7 @@ All key decisions should be summarized in the "Resolved Discussions" section.
 
 | Task | Agent Responsible | Status | Priority | Deadline | Latest Learnings |
 |------|-------------------|--------|----------|----------|------------------|
-| Project setup (Firebase, repo) | Backend, Frontend | ☐ Not started | High | 2025-05-01 | |
+| Project setup (Firebase, repo) | Backend, Frontend, Project Management | ☐ Not started | High | 2025-05-01 | |
 | Auth implementation | Backend | 🟡 In progress | High | 2025-05-07 | Investigating OAuth refresh token strategies |
 | Auth integration | Frontend | ☐ Not started | High | 2025-05-10 | |
 | Board & task data model | Backend | ☐ Not started | High | 2025-05-15 | |
@@ -76,10 +82,12 @@ All key decisions should be summarized in the "Resolved Discussions" section.
 | File attachments | Backend, Frontend | ☐ Not started | Low | 2025-06-10 | |
 | Activity log | Backend | ☐ Not started | Low | 2025-06-15 | |
 | Activity display | Frontend | ☐ Not started | Low | 2025-06-20 | |
+| Sprint planning & retrospectives | Project Management | ☐ Not started | High | 2025-05-03 | |
+| Risk tracking & mitigation | Project Management | ☐ Not started | High | 2025-05-03 | |
 | Integration testing | Backend, Frontend | ☐ Not started | High | 2025-06-25 | |
-| User acceptance testing | Frontend | ☐ Not started | High | 2025-06-30 | |
+| User acceptance testing | Frontend, Project Management | ☐ Not started | High | 2025-06-30 | |
 | Performance optimization | Backend, Frontend | ☐ Not started | Medium | 2025-07-05 | |
-| Deployment & review | DevOps, Backend, Frontend | ☐ Not started | High | 2025-07-10 | |
+| Deployment & review | DevOps, Backend, Frontend, Project Management | ☐ Not started | High | 2025-07-10 | |
 
 **Status Legend:**
 - ☐ Not started
