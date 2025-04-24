@@ -1,5 +1,25 @@
 # PM–Frontend Communication Log
 
+## Repository Access Instructions
+
+To work on this project, clone the repository using the following command:
+
+```sh
+git clone https://github.com/darthspoosky/aiagenttool.git
+```
+
+- After cloning, navigate to the project directory:
+  ```sh
+  cd aiagenttool
+  ```
+- Always pull the latest changes before starting work:
+  ```sh
+  git pull
+  ```
+- Use the automation scripts (e.g., `quick-commit.ps1`) for committing and pushing your changes.
+
+---
+
 ## Project Kickoff Instructions for Frontend Agent (2025-04-24 21:21:03)
 
 **Project X: Jira-like Task Management Board**
