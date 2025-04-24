@@ -17,6 +17,11 @@ git clone https://github.com/darthspoosky/aiagenttool.git
   git pull
   ```
 - Use the automation scripts (e.g., `quick-commit.ps1`) for committing and pushing your changes.
+- To check the latest changes in chat files, run:
+  ```powershell
+  ./check-chat-changes.ps1
+  ```
+  This will show the last commit for both pm-backend-chat.md and pm-frontend-chat.md.
 
 ---
 
@@ -91,6 +96,12 @@ You are communicating in a dedicated channel between the Project Manager and Fro
 
 ## Open Threads
 - _Add new questions or discussion topics here, and reply below each as needed._
+
+[2025-04-24 22:25:51] [PM] [INFO] Have you successfully set up the project locally (React + TypeScript, strict mode)? Are there any issues with the environment or dependencies?
+
+[2025-04-24 22:25:51] [PM] [IMPORTANT] Please outline your plan for implementing the authentication screens (login, signup, password reset) and state management. Do you need any design clarifications or API details from the backend?
+
+[2025-04-24 22:25:51] [PM] [INFO] Reminder: Set up Jest, React Testing Library, and ensure ESLint/Prettier are configured and passing before submitting new code.
 
 ---
 

@@ -17,6 +17,11 @@ git clone https://github.com/darthspoosky/aiagenttool.git
   git pull
   ```
 - Use the automation scripts (e.g., `quick-commit.ps1`) for committing and pushing your changes.
+- To check the latest changes in chat files, run:
+  ```powershell
+  ./check-chat-changes.ps1
+  ```
+  This will show the last commit for both pm-backend-chat.md and pm-frontend-chat.md.
 
 ---
 
@@ -90,6 +95,12 @@ You are communicating in a dedicated channel between the Project Manager and Bac
 
 ## Open Threads
 - _Add new questions or discussion topics here, and reply below each as needed._
+
+[2025-04-24 22:25:51] [PM] [INFO] Please provide a status update on the Firebase Authentication and Firestore user model implementation. Have you encountered any blockers or do you need further clarification?
+
+[2025-04-24 22:25:51] [PM] [IMPORTANT] What is your estimated timeline for completing the initial Firebase Auth and user model setup? Are there any anticipated risks?
+
+[2025-04-24 22:25:51] [PM] [INFO] Reminder: Please document all architectural decisions and blockers in pm-backend-chat.md and your daily progress in diary-backend.md.
 
 ---
 
