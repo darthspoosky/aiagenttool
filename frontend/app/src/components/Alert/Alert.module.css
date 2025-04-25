@@ -1,0 +1,103 @@
+.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-lg);
+  border-left: 6px solid var(--color-primary-gradient-end, #2563eb);
+  background: linear-gradient(90deg, var(--color-bg, #fff) 85%, var(--color-primary-gradient-start, #6366f1) 100%);
+  box-shadow: 0 2px 12px rgba(37,99,235,0.08);
+  color: var(--color-text, #111827);
+  font-size: 1rem;
+  margin: 1em 0;
+  position: relative;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.alert.info {
+  border-left-color: var(--color-primary-gradient-end, #2563eb);
+  background: linear-gradient(90deg, var(--color-bg, #fff) 85%, var(--color-primary-gradient-start, #6366f1) 100%);
+}
+.alert.success {
+  border-left-color: var(--color-success, #22c55e);
+  background: linear-gradient(90deg, var(--color-bg, #fff) 85%, var(--color-success, #22c55e) 100%);
+}
+.alert.warning {
+  border-left-color: var(--color-warning, #f59e42);
+  background: linear-gradient(90deg, var(--color-bg, #fff) 85%, var(--color-warning, #f59e42) 100%);
+}
+.alert.danger {
+  border-left-color: var(--color-danger, #ef4444);
+  background: linear-gradient(90deg, var(--color-bg, #fff) 85%, var(--color-danger, #ef4444) 100%);
+}
+
+.icon {
+  margin-right: 0.75em;
+  font-size: 1.5em;
+  flex-shrink: 0;
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 0.2em;
+}
+
+
+.content {
+  flex: 1 1 auto;
+}
+
+.close {
+  background: transparent;
+  border: none;
+  color: var(--color-text, #111827);
+  font-size: 1.3em;
+  margin-left: 1em;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.close:hover,
+.close:focus {
+  opacity: 1;
+  outline: none;
+}
+  font-weight: 600;
+  margin-bottom: 0.2em;
+}
+.info {
+  border-color: var(--color-primary, #2563eb);
+  background: rgba(37,99,235,0.08);
+  color: var(--color-primary, #2563eb);
+}
+.success {
+  border-color: var(--color-success, #16a34a);
+  background: rgba(22,163,74,0.08);
+  color: var(--color-success, #16a34a);
+}
+.warning {
+  border-color: var(--color-warning, #f59e42);
+  background: rgba(245,158,66,0.08);
+  color: var(--color-warning, #f59e42);
+}
+.danger {
+  border-color: var(--color-danger, #dc2626);
+  background: rgba(220,38,38,0.08);
+  color: var(--color-danger, #dc2626);
+}
+.close {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.2em;
+  margin-left: 1em;
+  cursor: pointer;
+  padding: 0.2em;
+  line-height: 1;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+.close:hover {
+  background: rgba(0,0,0,0.06);
+}

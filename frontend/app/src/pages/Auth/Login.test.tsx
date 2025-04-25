@@ -1,9 +1,14 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import Login from './Login';
+import { AuthProvider } from '../../context/AuthContext';
 
 describe('Login Page', () => {
   it('renders login form', () => {
-    render(<Login />);
+    render(
+      <AuthProvider>
+        <Login />
+      </AuthProvider>
+    );
     expect(screen.getByPlaceholderText('Email')).toBeInTheDocument();
     expect(screen.getByPlaceholderText('Password')).toBeInTheDocument();
     expect(screen.getByText('Login')).toBeInTheDocument();
@@ -11,7 +16,11 @@ describe('Login Page', () => {
   });
 
   it('submits form with email and password', () => {
-    render(<Login />);
+    render(
+      <AuthProvider>
+        <Login />
+      </AuthProvider>
+    );
     fireEvent.change(screen.getByPlaceholderText('Email'), { target: { value: 'test@example.com' } });
     fireEvent.change(screen.getByPlaceholderText('Password'), { target: { value: 'password' } });
     fireEvent.click(screen.getByText('Login'));

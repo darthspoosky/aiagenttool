@@ -1,0 +1,36 @@
+:root {
+  --color-primary: var(--color-primary, #3b82f6);
+  --color-bg: var(--color-bg, #f9fafb);
+  --color-text: var(--color-text, #111827);
+  --spacing-md: var(--spacing-md, 1rem);
+  --radius: var(--radius, 0.5rem);
+}
+
+.nav {
+  background: var(--color-bg);
+  border-right: 1px solid #e5e7eb;
+  padding: var(--spacing-md);
+  min-width: 180px;
+  min-height: 100vh;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navLink {
+  display: block;
+  color: var(--color-primary);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  border-radius: var(--radius);
+  transition: background 0.2s;
+}
+
+.navLink:hover,
+.navLink:focus {
+  background: #e0e7ff;
+  outline: none;
+}

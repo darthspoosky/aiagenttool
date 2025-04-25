@@ -1,8 +1,14 @@
 /**
  * Entry point for PrepTalk Backend
  *
- * This file will initialize the server and load configuration.
- * Implementation will be added after PM approval.
+ * Initializes Express server and mounts feature routes.
+ *
+ * @module index
  */
+import app from './app';
 
-console.log('PrepTalk Backend server initialization placeholder.');
+const PORT: string | number = process.env.PORT || 4000;
+
+app.listen(PORT, () => {
+  console.log(`PrepTalk Backend listening on port ${PORT}`);
+});

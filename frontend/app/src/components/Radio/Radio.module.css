@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.radio {
+  accent-color: var(--color-primary, #2563eb);
+  width: 1.1em;
+  height: 1.1em;
+  border-radius: 50%;
+  border: 1px solid var(--color-border, #d1d5db);
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.radio:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.18);
+  border-color: var(--color-primary, #2563eb);
+}
+.label {
+  color: var(--color-text, #111827);
+  font-size: 1em;
+}

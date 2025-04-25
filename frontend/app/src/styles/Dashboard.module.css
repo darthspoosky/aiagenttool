@@ -1,0 +1,17 @@
+:root {
+  --color-bg: var(--color-bg, #f9fafb);
+  --color-text: var(--color-text, #111827);
+  --spacing-lg: var(--spacing-lg, 2rem);
+}
+
+.dashboardRoot {
+  display: flex;
+  min-height: 100vh;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.dashboardContent {
+  flex: 1;
+  padding: var(--spacing-lg);
+}

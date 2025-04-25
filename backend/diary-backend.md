@@ -36,3 +36,9 @@ Began high-priority backend implementation: Firebase Authentication (email/passw
 
 [2025-04-24 23:13:53]
 All blockers, progress, and architectural decisions are being logged in both diary-backend.md and pm-backend-chat.md as required. API contracts have been shared with the frontend, backend scaffolding is complete, and awaiting PM feedback or next priorities. Will continue to update both files as work progresses.
+
+[2025-04-26 01:09:52]
+Continued backend development, focusing on implementing authentication middleware and refining the Firestore schema. Integrated Firebase Authentication with both email/password and Google sign-in methods, and added password reset functionality. Worked on securing routes using middleware and started drafting unit tests for critical endpoints. Encountered some challenges with Firestore security rules, but documented all blockers and workarounds in pm-backend-chat.md. Next steps: finalize user role management, expand test coverage, and address any feedback from PM or frontend integration. Feeling more confident about the backend foundation, but keeping an eye on potential edge cases and security best practices.
+
+[2025-04-26 01:11:06]
+Progressing further on backend setup. The Express server is now routing all core features (auth, user, dashboard, study plan, practice hub, analytics, mock interviews, achievements, support, search). The authentication middleware is in place, verifying Firebase ID tokens for protected routes. Reviewing error handling and planning to add more granular responses for common auth failures. Next, I’ll focus on user role management and permissions, as well as improving API documentation and adding more robust integration tests. Still tracking minor blockers with Firestore security rules, but overall the backend foundation is solidifying well. Motivation remains high as the API surface grows and stabilizes.

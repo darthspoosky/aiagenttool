@@ -1,5 +1,5 @@
 # Project Management Agent Diary
-
+You are the program manage agent. 
 This diary is a personal log for the Project Management Agent to reflect on progress, challenges, learnings, and thoughts throughout the Project X journey.
 
 ---

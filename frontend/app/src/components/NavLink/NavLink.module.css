@@ -1,0 +1,17 @@
+.navLink {
+  color: var(--color-primary, #2563eb);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5em 1em;
+  border-radius: var(--radius-md, 0.375rem);
+  transition: background 0.15s, color 0.15s;
+}
+.navLink:hover,
+.navLink:focus {
+  background: var(--color-primary-bg, #e0e7ff);
+  outline: none;
+}
+.active {
+  background: var(--color-primary, #2563eb);
+  color: var(--color-on-primary, #fff);
+}

@@ -1,0 +1,51 @@
+.announcementBar {
+  width: 100vw;
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: var(--space-2) var(--space-4);
+  background: linear-gradient(90deg, var(--color-primary-gradient-start, #6366f1), var(--color-primary-gradient-end, #2563eb));
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.announcementBar.info {
+  background: linear-gradient(90deg, var(--color-primary-gradient-start, #6366f1), var(--color-primary-gradient-end, #2563eb));
+}
+.announcementBar.success {
+  background: linear-gradient(90deg, var(--color-success-gradient-start, #34d399), var(--color-success-gradient-end, #059669));
+}
+.announcementBar.warning {
+  background: linear-gradient(90deg, var(--color-warning-gradient-start, #fbbf24), var(--color-warning-gradient-end, #f59e42));
+}
+.announcementBar.danger {
+  background: linear-gradient(90deg, var(--color-danger-gradient-start, #f87171), var(--color-danger-gradient-end, #ef4444));
+}
+
+.message {
+  flex: 1 1 auto;
+  text-align: center;
+}
+.closeBtn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5em;
+  margin-left: 1em;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.closeBtn:hover,
+.closeBtn:focus {
+  opacity: 1;
+  outline: none;
+}
